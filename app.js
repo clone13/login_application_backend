@@ -12,10 +12,9 @@ app.use(cors());
 
 // Routes
 app.use("/api/users", userRoutes);
-// app.use(cors({ origin: "http://localhost:3000" }));
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
